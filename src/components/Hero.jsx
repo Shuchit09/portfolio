@@ -32,7 +32,7 @@ export default function Hero({ imgURL }) {
               "-webkit-background-clip": "text",
               "-webkit-text-fill-color": "transparent",
             }}
-            className="text-6xl ">
+            className="text-6xl">
             Shuchit Singh
           </h1>
           <p className="mt-7">
@@ -42,7 +42,7 @@ export default function Hero({ imgURL }) {
           </p>
           <div className="mt-4 w-3/4 h-fit">
             <Button
-              textt={{
+              properties={{
                 title: "Download Resume",
                 icon: <MdFileDownload />,
                 pad: 2,
