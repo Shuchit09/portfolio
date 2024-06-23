@@ -5,6 +5,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import Introduction from "./components/Introduction"
 import Skills from "./components/Skills";
 import Cards from "./components/Cards"
+import Footer from "./components/Footer";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -14,8 +15,8 @@ function App() {
       {/* <div className="mt-10"><Fields></Fields></div> */}
       {/* <Introduction></Introduction> */}
       {/* <div className="h-screen"><Skills></Skills></div> */}
-      <Cards></Cards>
-
+      {/* <div className="h-screen"><Cards></Cards></div> */}
+      <Footer></Footer>
     </div>
   );
 }
