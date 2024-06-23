@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { FaAngleRight } from "react-icons/fa";
 
 function Navbar() {
   const menu_option = [
@@ -10,16 +11,21 @@ function Navbar() {
     { name: "Experience", status: false },
   ];
   return (
-    <div className="max-w-screen-2xl flex items-center justify-between py-6 px-20 ">
+    <div
+      style={{
+        backgroundImage:
+          "linear-gradient(to top, #000000 60%,#000000 50%,#000000 40%,#000000 30%,#000000 20%,#000000 10%,transparent,)",
+      }}
+      className="max-w-screen-2xl flex items-center justify-between py-6 px-20">
       <div className="h-fit w-28 text-semibold">
         <h1
           style={{
-            textShadow: "0 0 0.09em #ffffff",
+            textShadow: "0 0 0.09em #c33cb7",
           }}
           className="font-semibold text-2xl tracking-wider">
           <span
             style={{
-              color: "#00FF19",
+              color: "#c33cb7",
             }}>
             Sh
           </span>
@@ -33,8 +39,8 @@ function Navbar() {
               {item.status ? (
                 <span
                   style={{
-                    backgroundColor: "#00FF19",
-                    boxShadow: "0 0 0.25em #00FF19",
+                    backgroundColor: "#c33cb7",
+                    boxShadow: "0 0 0.25em #c33cb7",
                   }}
                   className="inline-block h-1 w-1  rounded-full"></span>
               ) : (
@@ -50,7 +56,7 @@ function Navbar() {
         })}
       </div>
       <div className="h-fit">
-        <Button></Button>
+        <Button textt={{title:"Get in touch",icon: <FaAngleRight />,pad:1}}></Button>
       </div>
     </div>
   );
