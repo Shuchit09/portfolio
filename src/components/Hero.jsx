@@ -45,7 +45,7 @@ export default function Hero({ imgURL }) {
               properties={{
                 title: "Download Resume",
                 icon: <MdFileDownload />,
-                pad: 2,
+                pad: "8px",
               }}></Button>
           </div>
         </div>

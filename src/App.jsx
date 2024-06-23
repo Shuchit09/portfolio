@@ -9,9 +9,7 @@ function App() {
         <Navbar className="sticky top-0 z-10 w-full"></Navbar>
       </header>
       <Hero imgURL="../public/images/my_picture.jpg"></Hero>
-    
-      {/* <div className="w-full h-[1px] bg-zinc-700"></div> */}
-      <main className="top-0"></main>
+      
       
     </div>
   );

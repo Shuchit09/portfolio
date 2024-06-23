@@ -56,7 +56,7 @@ function Navbar() {
         })}
       </div>
       <div className="h-fit">
-        <Button properties={{title:"Get in touch",icon: <FaAngleRight />,pad:1}}></Button>
+        <Button properties={{title:"Get in touch",icon: <FaAngleRight />}} pad="2"></Button>
       </div>
     </div>
   );
