@@ -2,20 +2,14 @@ import React from "react";
 import Spline from "@splinetool/react-spline";
 import { MdFileDownload } from "react-icons/md";
 import Button from "./Button";
-
 import { FaAngleRight } from "react-icons/fa";
 
-export default function Hero({ imgURL }) {
+export default function Hero({ imgURL ,vid}) {
   return (
-    <div className="">
-      {/* <Spline
-        className="absolute"
-        scene="https://prod.spline.design/kWQuDTzlbCZ8bGqQ/scene.splinecode"
-      /> */}
-      <Spline
-        className="absolute"
-        scene="https://prod.spline.design/hYuw2Zoraacf8DpI/scene.splinecode"
-      />
+    <div className="h-screen">
+      <video loop muted autoPlay="autoplay">
+        <source src={vid} />
+      </video>
       <div
         style={{
           backgroundImage:
@@ -42,12 +36,16 @@ export default function Hero({ imgURL }) {
             odio incidunt, enim eum.
           </p>
           <div className="mt-4 w-3/4 h-fit">
-            <Button
-              properties={{
-                title: "Download Resume",
-                icon: <MdFileDownload />,
-                pad: "8px",
-              }}></Button>
+            <a
+              download={'shuchit-resume'}
+              href="../public/files/resume.pdf">
+              <Button
+                properties={{
+                  title: "Download Resume",
+                  icon: <MdFileDownload />,
+                  pad: "8px",
+                }}></Button>
+            </a>
           </div>
         </div>
         <div className="">

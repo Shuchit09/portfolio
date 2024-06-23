@@ -14,7 +14,7 @@ function Navbar() {
     <div
       style={{
         backgroundImage:
-          "linear-gradient(to top, #000000 60%,#000000 50%,#000000 40%,#000000 30%,#000000 20%,#000000 10%,transparent,)",
+          "linear-gradient(to bottom, #000000 60%,#000000 50%,#000000 40%,#000000 30%,#000000 20%,#000000 10%,transparent,)",
       }}
       className="max-w-screen-2xl flex items-center justify-between py-6 px-20">
       <div className="h-fit w-28 text-semibold">

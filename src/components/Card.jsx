@@ -24,7 +24,7 @@ function Card({width,start,para,hover,pre,main}) {
           start a project
         </h1>
         <Button 
-          properties={{ title: "Contact Us", icon: <FaAngleRight /> }}
+          properties={{ title: "Contact Me", icon: <FaAngleRight /> }}
           pad="2" custom='rounded-full py-2 px-3 bg-transparent border-[1px] border-zinc-100 w-36 flex items-center justify-center mt-3'></Button>
             </div>
         ):''}
