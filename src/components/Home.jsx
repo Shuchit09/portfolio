@@ -6,7 +6,7 @@ import Hero from './Hero'
 function Home() {
   return (
     <div>
-      <div className="static">
+      <div className="">
         <header className="absolute top-0 z-10 w-full">
           <Navbar
             style={{

@@ -4,7 +4,7 @@ import { MdFileDownload } from "react-icons/md";
 import Button from "./Button";
 import { FaAngleRight } from "react-icons/fa";
 
-export default function Hero({ imgURL ,vid}) {
+export default function Hero({ imgURL, vid }) {
   return (
     <div className="h-screen">
       <video loop muted autoPlay="autoplay">
@@ -31,14 +31,47 @@ export default function Hero({ imgURL ,vid}) {
             Shuchit Singh
           </h1>
           <p className="mt-7">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-            corrupti maxime exercitationem optio doloremque aliquid reiciendis
-            odio incidunt, enim eum.
+            <span
+              style={{
+                color: "#c33cb7",
+                background: "-webkit-linear-gradient(left, #c33cb7, #ef6e2e)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
+              I am a developer
+            </span>{" "}
+            driven with a passion for crafting exceptional{" "}
+            <span
+              style={{
+                color: "#c33cb7",
+                background: "-webkit-linear-gradient(left, #c33cb7, #ef6e2e)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
+              web experiences </span>
+            and exploring the frontiers of
+            <span
+              style={{
+                color: "#c33cb7",
+                background: "-webkit-linear-gradient(left, #c33cb7, #ef6e2e)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}> machine learning.
+            </span>
+            I thrive on challenges that push my creativity and skills, aiming to
+            build impactful solutions that{" "}
+            <span
+              style={{
+                color: "#c33cb7",
+                background: "-webkit-linear-gradient(left, #c33cb7, #ef6e2e)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
+              inspire and innovate.
+            </span>
           </p>
           <div className="mt-4 w-3/4 h-fit">
-            <a
-              download={'shuchit-resume'}
-              href="../public/files/resume.pdf">
+            <a download={"shuchit-resume"} href="../public/files/resume.pdf">
               <Button
                 properties={{
                   title: "Download Resume",

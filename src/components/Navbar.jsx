@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import { FaAngleRight } from "react-icons/fa";
 
 function Navbar() {
   const menu_option = [
     { name: "Home", status: true },
-    { name: "Me", status: false },
     { name: "Skills", status: false },
     { name: "", status: false },
     { name: "Experience", status: false },
@@ -46,7 +45,7 @@ function Navbar() {
               ) : (
                 ""
               )}
-              <a key={i} href="">
+              <a  key={i} href={`./${item.name}`}>
                 {item.name}
               </a>
             </div>
