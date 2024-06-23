@@ -35,7 +35,7 @@ function Navbar() {
       <div className="menus gap-16 flex items-center bg-transparent text-base font-regular tracking-wide">
         {menu_option.map((item, i) => {
           return item.name.length != 0 ? (
-            <div className="flex items-center justify-center gap-1.5">
+            <div key={i} className="flex items-center justify-center gap-1.5">
               {item.status ? (
                 <span
                   style={{
@@ -51,7 +51,9 @@ function Navbar() {
               </a>
             </div>
           ) : (
-            <span className="h-5 w-[1.5px] bg-slate-400 rounded-md"></span>
+            <span
+              key={i}
+              className="h-5 w-[1.5px] bg-slate-400 rounded-md"></span>
           );
         })}
       </div>

@@ -1,18 +1,20 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import React from "react";
+import Fields from "./components/Fields";
+import Home from "./components/Home";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="h-screen w-full bg-zinc-900 text-white">
-      <header className="absolute top-0 z-10 w-full">
-        <Navbar className="sticky top-0 z-10 w-full"></Navbar>
-      </header>
-      <Hero imgURL="../public/images/my_picture.jpg"></Hero>
-      
-      
+    <div className="h-fit w-full bg-black text-white flex flex-col">
+      {/* <div className=" h-screen"><Home></Home></div> */}
+      {/* <div className="mt-40"><Fields></Fields></div> */}
+
+      <div className="div">
+        <Skills></Skills>
+      </div>
     </div>
   );
 }
 
-export default App
+export default App;

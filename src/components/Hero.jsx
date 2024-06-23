@@ -7,7 +7,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 export default function Hero({ imgURL }) {
   return (
-    <div className="object-cover">
+    <div className="">
       {/* <Spline
         className="absolute"
         scene="https://prod.spline.design/kWQuDTzlbCZ8bGqQ/scene.splinecode"
@@ -18,7 +18,8 @@ export default function Hero({ imgURL }) {
       />
       <div
         style={{
-          backgroundImage: " linear-gradient(to top, #000 10%, transparent)",
+          backgroundImage:
+            " linear-gradient(to top, #000 40%, #000 30%, #000 10%, transparent)",
         }}
         className="absolute top-10 w-full h-screen bg-blend-darken flex items-center justify-center gap-40">
         <div
@@ -29,8 +30,8 @@ export default function Hero({ imgURL }) {
             style={{
               color: "#c33cb7",
               background: "-webkit-linear-gradient(left, #c33cb7, #ef6e2e)",
-              "-webkit-background-clip": "text",
-              "-webkit-text-fill-color": "transparent",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
             className="text-6xl">
             Shuchit Singh
