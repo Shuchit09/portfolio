@@ -45,6 +45,8 @@ function App() {
       desc: "HTML structures web content, defining elements like headings, paragraphs, and links whereas, CSS styles this content, controlling layout, colors, and fonts. Together, they create visually appealing and organized web pages​",
     },
   ];
+
+  
   return (
     <div className="h-full w-full bg-black text-white flex flex-col overflow-y-hidden">
       <div className=" h-screen">

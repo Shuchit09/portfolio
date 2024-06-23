@@ -7,13 +7,13 @@ function Home() {
   return (
     <div>
       <div className="">
-        <header className="absolute top-0 z-10 w-full">
+        <header className="fixed w-full">
           <Navbar
             style={{
-              backgroundImage:
+              background:
                 " linear-gradient(to top, #000 40%, #000 30%, #000 10%, transparent)",
             }}
-            className="sticky top-0 z-10 w-full"></Navbar>
+            className="w-full"></Navbar>
         </header>
         <Hero
           imgURL="../public/images/my_picture.jpg"

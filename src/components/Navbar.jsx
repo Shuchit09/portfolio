@@ -5,9 +5,9 @@ import { FaAngleRight } from "react-icons/fa";
 function Navbar() {
   const menu_option = [
     { name: "Home", status: true },
-    { name: "Skills", status: false },
-    { name: "", status: false },
     { name: "Experience", status: false },
+    { name: "", status: false },
+    { name: "Skills", status: false },
   ];
   return (
     <div
@@ -45,7 +45,7 @@ function Navbar() {
               ) : (
                 ""
               )}
-              <a  key={i} href={`./${item.name}`}>
+              <a key={i} href={`./${item.name}`}>
                 {item.name}
               </a>
             </div>
@@ -57,7 +57,9 @@ function Navbar() {
         })}
       </div>
       <div className="h-fit">
-        <Button properties={{title:"Get in touch",icon: <FaAngleRight />}} pad="2"></Button>
+        <Button
+          properties={{ title: "Get in touch", icon: <FaAngleRight /> }}
+          pad="2"></Button>
       </div>
     </div>
   );
