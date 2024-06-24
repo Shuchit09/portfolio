@@ -3,12 +3,12 @@ import Card from './Card'
 
 function Cards() {
   return (
-    <div className="w-full">
-      <div className="max-w-screen-xl mx-auto  py-20 flex gap-2">
+    <div className="w-full mt-20">
+      <div className="max-w-screen-xl mx-3 xl:mx-auto  flex flex-col lg:flex-row gap-2">
         <Card
           pre={"Featured: Web Development"}
           main={"Projects"}
-          width={"basis-1/3"}
+          width={" basis-1/3"}
           start={false}
           para={true}
           hover={{
@@ -20,7 +20,7 @@ function Cards() {
           pre={"Get In Touch"}
           main={<div>
             <p>Let's do it,</p><p>together.</p></div>}
-          width={"basis-2/3"}
+          width={" basis-2/3"}
           start={true}
           para={false}
           hover={{

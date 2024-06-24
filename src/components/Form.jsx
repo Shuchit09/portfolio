@@ -13,9 +13,9 @@ function Form({ image }) {
       style={{
         backgroundImage: `url(${image})`,
       }}
-      className={`h-screen flex items-center justify-center bg-blend-darken`}>
+      className={`h-fit mt-20 flex items-center justify-center bg-blend-darken`}>
       <div
-        className={`w-full h-fit  px-14 py-12 rounded-lg bg-zinc-800/85  min-w-[400px] max-w-[1000px] flex items-center justify-between`}>
+        className={`w-full h-full  px-14 py-12 my-10 rounded-lg bg-zinc-800/85  min-w-[200px] max-w-[1000px] flex items-center justify-between`}>
         <div className="basis-3/5 flex flex-col items-start gap-32">
           <div className="content">
             <h1 className="block text-5xl text-zinc-300 mb-5">Contact Me</h1>

@@ -18,14 +18,14 @@ function Skill({data,mover,index,shower}) {
       transition={{
         duration: 0.5,
       }}
-      className="w-full py-16 px-5 rounded-md h-[18rem]">
+      className="w-full py-16 px-5 rounded-md lg:h-[18rem] h-[16rem]">
       <motion.div
         whileHover={() => {
           mover(index);
         }}
-        className="max-w-screen-xl mx-auto flex items-center justify-between">
+        className=" w-full md:max-w-screen-xl mx-5 md:mx-auto flex md:flex-row flex-col md:items-center items-center justify-between md:gap-0 gap-10 mt-10">
         <h1 className="text-5xl capitalize font-medium">{data.title}</h1>
-        <div className="dets w-1/3">
+        <div className="dets md:w-1/3">
           <p className="mb-10">{data.desc}</p>
         </div>
       </motion.div>

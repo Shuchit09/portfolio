@@ -26,10 +26,14 @@ function Fields() {
     },
   ];
   return (
-    <div className="flex flex-col items-center">
-        <h1 style={{fontFamily:'JetBrains Mono'}} className="m-10 text-[96px] font-bold mb-5 ">Experience</h1>
-        <div className="w-full border-b-[1px] bg-zinc-200"></div>
-      <div className="w-full px-16 py-16 h-full flex item-center justify-center gap-16 flex-wrap">
+    <div className="flex flex-col md:items-center sm:mt-20 mt-20">
+      <h1
+        style={{ fontFamily: "JetBrains Mono" }}
+        className="m-10 text-[74px] lg:text-[96px] font-bold mb-5 ">
+        Experience
+      </h1>
+      <div className="w-full border-b-[1px] bg-zinc-200"></div>
+      <div className="w-full px-16 md:py-16 h-full flex item-center justify-center gap-16 flex-wrap ">
         {data.map((item, i) => (
           <Field key={i} data={item}></Field>
         ))}

@@ -16,8 +16,8 @@ function Field({data}) {
       transition={{
         duration: 0.5,
       }}
-      className="flex items-center w-2/5 py-8 px-10 rounded-lg ">
-      <div className="border-b-[1px] border-zinc-100  h-fit py-4">
+      className="flex items-center xl:w-2/5 py-8 px-10 rounded-lg  md:w-4/5 w-full">
+      <div className="w-full border-b-[1px] border-zinc-100  h-fit py-4">
         <div className="up flex items-center justify-between">
           <h2
           style={{fontFamily:'Share Tech'}}
@@ -26,7 +26,7 @@ function Field({data}) {
           animate={{rotate:"360deg"}}
           transition={{duration:1000}}
            className="">
-            <TbInnerShadowBottomRightFilled className="text-6xl" />
+            <TbInnerShadowBottomRightFilled className="md:text-6xl h-0" />
           </motion.div>
         </div>
         <div className="mid">
