@@ -9,8 +9,8 @@ function Footer() {
   ];
   return (
     <div className="w-full pb-3 lg:pb-5 xl:pb-8">
-      <div className='px-36 flex items-center justify-between'>
-        <div className="handles flex gap-5 mb:gap-9">
+      <div className='px-16 sm:px-36 flex items-center gap-10 sm:gap-0 justify-between'>
+        <div className="handles flex gap-3 sm:gap-5 mb:gap-9">
             {data2.map((item,i)=><a href={item.url} 
             style={{
                 fontFamily:'Roboto'

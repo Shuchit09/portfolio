@@ -15,11 +15,11 @@ function Form({ image }) {
       }}
       className={`h-fit mt-20 flex items-center justify-center bg-blend-darken`}>
       <div
-        className={`w-full h-full  px-14 py-12 my-10 rounded-lg bg-zinc-800/85  min-w-[200px] max-w-[1000px] flex items-center justify-between`}>
-        <div className="basis-3/5 flex flex-col items-start gap-32">
+        className={`w-full h-full   px-14 py-12 mx-6 my-10 rounded-lg bg-zinc-800/85 min-w-[100px]  sm:min-w-[200px] max-w-[1000px] flex flex-col sm:flex-row items-center justify-between`}>
+        <div className="basis-1 sm:basis-3/5 flex flex-col mb-12 sm:mb-0 items-start gap-4 sm:gap-32">
           <div className="content">
-            <h1 className="block text-5xl text-zinc-300 mb-5">Contact Me</h1>
-            <h3 className=" block text-sm text-zinc-500 font-semibold">
+            <h1 className="block text-5xl sm:text-4xl  md:text-5xl text-zinc-300 mb-5">Contact Me</h1>
+            <h3 className=" block text-xs sm:text-sm text-zinc-500 font-semibold">
               Let's build together...
             </h3>
           </div>
@@ -50,7 +50,7 @@ function Form({ image }) {
             </a>
           </div>
         </div>
-        <div className="basis-2/5">
+        <div className="basis-1 sm:basis-2/5">
           <form
             onSubmit={(det) => {
               console.log(det);

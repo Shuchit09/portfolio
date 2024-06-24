@@ -23,7 +23,7 @@ function Skill({data,mover,index,shower}) {
         whileHover={() => {
           mover(index);
         }}
-        className=" w-full md:max-w-screen-xl mx-5 md:mx-auto flex md:flex-row flex-col md:items-center items-center justify-between md:gap-0 gap-10 mt-10">
+        className=" w-full md:max-w-screen-xl mx-5 md:mx-auto flex md:flex-row flex-col md:items-center items-center justify-between md:gap-0 gap-10 mt-10 ">
         <h1 className="text-5xl capitalize font-medium">{data.title}</h1>
         <div className="dets md:w-1/3">
           <p className="mb-10">{data.desc}</p>

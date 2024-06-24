@@ -3,7 +3,7 @@ import Card from './Card'
 
 function Cards() {
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-28 sm:mt-20">
       <div className="max-w-screen-xl mx-3 xl:mx-auto  flex flex-col lg:flex-row gap-2">
         <Card
           pre={"Featured: Web Development"}

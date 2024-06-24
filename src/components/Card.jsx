@@ -11,15 +11,15 @@ function Card({width,start,para,hover,pre,main}) {
       className={`bg-zinc-800 p-7 xl:p-5 rounded-xl ${width} min-h-fit lg:min-h-[28rem] xl:min-h-[30rem] flex flex-col justify-between`}>
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
-          <h3 className="">{pre}</h3>
+          <h3 className=" text-[12px] sm:text-[18px]">{pre}</h3>
           <FaArrowRightLong />
         </div>
-        <h1 className="text-lg md:text-xl lg:text-3xl mt-5 mb-10 lg:mb-0 tracking-wider">{main}</h1>
+        <h1 className="text-base sm:text-lg md:text-xl lg:text-3xl mt-5 mb-5 sm:mb-10 lg:mb-0 tracking-wider">{main}</h1>
       </div>
       <div className="down w-full">
         {start ? (
           <div className="">
-            <h1 className=" text-[52px] md:text-[68px] lg:text-[86px] xl:text-[96px] font-regular tracking-tight leading-none capitalize">
+            <h1 className=" text-[36px] sm:text-[52px] md:text-[68px] lg:text-[86px] xl:text-[96px] font-regular tracking-tight leading-none capitalize">
               start a project
             </h1>
             <a href='./Form'>

@@ -8,7 +8,7 @@ export default function Hero({ imgURL, vid }) {
   return (
     <div className="h-screen w-full ">
       <video
-        className="h-full w-full object-cover"
+        className="h-0 sm:h-full w-full object-cover"
         loop
         muted
         autoPlay="autoplay">
@@ -85,7 +85,7 @@ export default function Hero({ imgURL, vid }) {
               style={{ boxShadow: "0 0 0.95em #c33cb7" }}
               class="lg:h-[327px] lg:w-[327px] md:w-[258px] md:h-[258px]  rounded-full bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500 p-1 flex items-center justify-center">
               <img
-                className="rounded-full h-52 w-52 md:h-64 md:w-64 lg:h-80 lg:w-80 object-cover"
+                className="rounded-full h-48 w-48 sm:h-52 sm:w-52 md:h-64 md:w-64 lg:h-80 lg:w-80 object-cover"
                 src={imgURL}
                 alt="image"
               />
