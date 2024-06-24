@@ -69,7 +69,7 @@ export default function Hero({ imgURL, vid }) {
             </p>
 
             <div className="mt-4 w-3/4 h-fit">
-              <a download={"shuchit-resume"} href="../public/files/resume.pdf">
+              <a download={"shuchit-resume"} href="/files/resume.pdf">
                 <Button
                   className="w-3"
                   properties={{

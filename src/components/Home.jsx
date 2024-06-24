@@ -15,8 +15,8 @@ function Home() {
             }} className=''></Navbar>
         </header>
         <Hero
-          imgURL="../public/images/my_picture.jpg"
-          vid="../public/videos/rocket.mp4"></Hero>
+          imgURL="/images/my_picture.jpg"
+          vid="/videos/rocket.mp4"></Hero>
       </div>
     </div>
   );

@@ -55,7 +55,7 @@ function App() {
         <Cards></Cards>
       </div>
 
-      <Form image={"../public/images/bg2.jpg"}></Form>
+      <Form image={"/images/bg2.jpg"}></Form>
       <div className="mt-10">
         <Footer></Footer>
       </div>
