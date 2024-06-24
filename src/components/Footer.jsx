@@ -1,14 +1,20 @@
 import React from 'react'
 
 function Footer() {
+  const data2 = [
+    { title: "GitHub", url: "https://github.com/Shuchit09" },
+    { title: "LinkedIn", url: "http://linkedin.com/in/shuchit-singh" },
+    { title: "X", url: "#" },
+    { title: "Mail", url: "mailto:shuchit.official@gmail.com" },
+  ];
   return (
     <div className="w-full pb-3 lg:pb-5 xl:pb-8">
       <div className='px-36 flex items-center justify-between'>
         <div className="handles flex gap-5 mb:gap-9">
-            {["LinkedIn","GitHub","X","Mail"].map((item,i)=><a href="#"
+            {data2.map((item,i)=><a href={item.url} 
             style={{
                 fontFamily:'Roboto'
-            }} className='text-sm text-zinc-500 hover:text-zinc-300'>{item}</a>)}
+            }} className='text-sm text-zinc-500 hover:text-zinc-300'>{item.title}</a>)}
         </div>
         <div className="logo">
           <div className="h-fit w-28 text-semibold">

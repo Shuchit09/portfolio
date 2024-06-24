@@ -27,41 +27,43 @@ function Form({ image }) {
             <div className="elem text-zinc-200 flex items-center gap-3 mb-5">
               <IoCall />
 
-              <a href="tel:+919119253219">: +91-91192-53219</a>
+              <a href="tel:+919335960407">: +91-9335-960407</a>
             </div>
             <div className="elem text-zinc-200 flex items-center gap-3">
               <IoMdMail />
 
-              <a href="mailto:shuchit@gmail.com">: shuchit@gmail.com</a>
+              <a href="mailto:shuchit.official@gmail.com">
+                : shuchit.official@gmail.com
+              </a>
             </div>
           </div>
 
           <div className="socials flex items-center gap-5 text-xl">
-            <a href="">
+            <a href="https://github.com/Shuchit09">
               <FaGithub></FaGithub>
             </a>
-            <a href="">
+            <a href="http://linkedin.com/in/shuchit-singh">
               <FaLinkedin></FaLinkedin>
             </a>
-            <a href="">
+            <a href="#">
               <FaSquareXTwitter></FaSquareXTwitter>
             </a>
           </div>
         </div>
         <div className="basis-2/5">
           <form
-          onSubmit={(det)=>{
-            console.log(det)
-            Email.send({
-              Host: "smtp.elasticemail.com",
-              Username: "username",
-              Password: "password",
-              To: "shuchit.strk.89@gmail.com",
-              From: "you@isp.com",
-              Subject: "This is the subject",
-              Body: "And this is the body",
-            }).then((message) => alert(message));
-          }}
+            onSubmit={(det) => {
+              console.log(det);
+              Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: "shuchit.strk.89@gmail.com",
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body",
+              }).then((message) => alert(message));
+            }}
             style={{ fontFamily: "Roboto" }}
             action=""
             className="flex flex-col items-end justify-end  gap-3 ">
